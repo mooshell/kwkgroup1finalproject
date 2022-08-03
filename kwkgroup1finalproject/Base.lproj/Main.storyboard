@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,10 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2022-08-02 at 2.39.55 PM" translatesAutoresizingMaskIntoConstraints="NO" id="plC-2f-mqS">
-                                <rect key="frame" x="-14" y="756" width="141" height="170"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Knd-1N-t76">
                                 <rect key="frame" x="186" y="438" width="0.0" height="0.0"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -28,21 +23,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z4F-RE-d05">
-                                <rect key="frame" x="183" y="631" width="50" height="31"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="663-MS-oeL">
+                                <rect key="frame" x="82" y="785" width="250" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="kwk"/>
-                                <connections>
-                                    <action selector="kwk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WaL-GM-OMq"/>
-                                </connections>
-                            </button>
+                                <attributedString key="attributedText">
+                                    <fragment content="kwk app demo 2022                   by Michelle, Amara &amp; Diya">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="0.99824950670000001" blue="0.97728674810000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="Futura-MediumItalic"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RbN-dx-KZq">
-                                <rect key="frame" x="96" y="311" width="225" height="274"/>
+                                <rect key="frame" x="0.0" y="249" width="414" height="398"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                <buttonConfiguration key="configuration" style="plain">
                                     <backgroundConfiguration key="background" image="buddgy logo"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -54,13 +53,10 @@
                         <color key="backgroundColor" red="0.22784867880000001" green="0.44574683900000001" blue="0.63139462469999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" red="0.22784867880000001" green="0.44574683900000001" blue="0.63139462469999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <connections>
-                        <outlet property="kwk" destination="z4F-RE-d05" id="GKc-oo-EhI"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-301.44927536231887" y="63.616071428571423"/>
+            <point key="canvasLocation" x="-923.1884057971015" y="63.616071428571423"/>
         </scene>
         <!--Budget-->
         <scene sceneID="CfN-h5-WEj">
@@ -79,10 +75,10 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fQ9-ri-gVU"/>
-                        <color key="backgroundColor" red="0.9941087703" green="0.85419593569999996" blue="0.86265055099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.22784867880000001" green="0.44574683900000001" blue="0.63139462469999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" name="AccentColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Budget" image="person.2" catalog="system" id="GxM-lm-3qs"/>
+                    <tabBarItem key="tabBarItem" title="Budget" image="plus.slash.minus" catalog="system" id="GxM-lm-3qs"/>
                     <navigationItem key="navigationItem" id="73Y-UX-wXE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZY8-13-Z0u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -143,10 +139,10 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="t5m-ys-TW1"/>
-                        <color key="backgroundColor" red="1" green="0.84731865279999996" blue="0.46713161269999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.65029239650000004" green="0.8688388467" blue="0.48227804899999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Resources" image="person.2" catalog="system" id="exn-o0-dPD">
-                        <color key="badgeColor" red="1" green="0.89711536729999997" blue="0.41375691250000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="badgeColor" red="0.22784867880000001" green="0.44574683900000001" blue="0.63139462469999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBarItem>
                     <connections>
                         <outlet property="investingresource" destination="t5u-CQ-nR0" id="SyI-9j-D1d"/>
@@ -164,7 +160,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="1" green="0.89711536729999997" blue="0.41375691250000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="selectedImageTintColor" red="1" green="0.84731865279999996" blue="0.46713161269999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.94736438990000005" green="0.96849626300000002" blue="0.44693171980000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
                         <segue destination="fv7-y6-XCe" kind="relationship" relationship="viewControllers" id="2Wq-V7-3gs"/>
@@ -174,7 +170,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H7b-vm-WDX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="635" y="829"/>
+            <point key="canvasLocation" x="-203" y="-461"/>
         </scene>
         <!--Rewards-->
         <scene sceneID="GvD-gT-AQe">
@@ -193,9 +189,9 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tGb-TF-fwd"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.22784867880000001" green="0.44574683900000001" blue="0.63139462469999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Rewards" id="WsM-9J-exb"/>
+                    <tabBarItem key="tabBarItem" title="Rewards" image="gift" catalog="system" id="WsM-9J-exb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gHH-Q7-WnF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -203,14 +199,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Screen Shot 2022-08-02 at 2.39.55 PM" width="338" height="614"/>
         <image name="buddgy logo" width="309" height="310"/>
+        <image name="gift" catalog="system" width="128" height="124"/>
         <image name="person.2" catalog="system" width="128" height="81"/>
+        <image name="plus.slash.minus" catalog="system" width="128" height="115"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
