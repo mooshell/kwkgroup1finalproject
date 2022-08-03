@@ -18,6 +18,7 @@
 		37142F502899A239006FF913 /* kwkgroup1finalprojectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37142F4F2899A239006FF913 /* kwkgroup1finalprojectUITests.swift */; };
 		37142F522899A239006FF913 /* kwkgroup1finalprojectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37142F512899A239006FF913 /* kwkgroup1finalprojectUITestsLaunchTests.swift */; };
 		379620E3289ABD8200C2C588 /* TableViewControllerExpenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379620E2289ABD8200C2C588 /* TableViewControllerExpenses.swift */; };
+		379620E5289ACFC000C2C588 /* TableViewControllerresource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379620E4289ACFC000C2C588 /* TableViewControllerresource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		37142F4F2899A239006FF913 /* kwkgroup1finalprojectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kwkgroup1finalprojectUITests.swift; sourceTree = "<group>"; };
 		37142F512899A239006FF913 /* kwkgroup1finalprojectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kwkgroup1finalprojectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		379620E2289ABD8200C2C588 /* TableViewControllerExpenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerExpenses.swift; sourceTree = "<group>"; };
+		379620E4289ACFC000C2C588 /* TableViewControllerresource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerresource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				37142F2D2899A237006FF913 /* SceneDelegate.swift */,
 				37142F2F2899A237006FF913 /* ViewController.swift */,
 				37142F312899A237006FF913 /* Main.storyboard */,
+				379620E4289ACFC000C2C588 /* TableViewControllerresource.swift */,
 				379620E2289ABD8200C2C588 /* TableViewControllerExpenses.swift */,
 				37142F372899A239006FF913 /* Assets.xcassets */,
 				37142F392899A239006FF913 /* LaunchScreen.storyboard */,
@@ -269,6 +272,7 @@
 				37142F2C2899A237006FF913 /* AppDelegate.swift in Sources */,
 				37142F362899A237006FF913 /* kwkgroup1finalproject.xcdatamodeld in Sources */,
 				37142F2E2899A237006FF913 /* SceneDelegate.swift in Sources */,
+				379620E5289ACFC000C2C588 /* TableViewControllerresource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
