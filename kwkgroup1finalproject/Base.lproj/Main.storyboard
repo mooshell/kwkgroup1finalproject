@@ -43,15 +43,28 @@
                                     <segue destination="3ZH-ir-lKg" kind="presentation" id="867-eY-HxB"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z4F-RE-d05">
+                                <rect key="frame" x="183" y="631" width="50" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="kwk"/>
+                                <connections>
+                                    <action selector="kwk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WaL-GM-OMq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.22784867880000001" green="0.44574683900000001" blue="0.63139462469999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" red="0.22784867880000001" green="0.44574683900000001" blue="0.63139462469999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
+                    <connections>
+                        <outlet property="kwk" destination="z4F-RE-d05" id="GKc-oo-EhI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-301" y="64"/>
+            <point key="canvasLocation" x="-301.44927536231887" y="63.616071428571423"/>
         </scene>
         <!--Budget-->
         <scene sceneID="CfN-h5-WEj">

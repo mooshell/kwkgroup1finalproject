@@ -8,12 +8,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var kwk: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
+    
+    @IBAction func kwk(_ sender: Any) {
+        let url = URL (string:
+        "https://www.kodewithklossy.com/")!
+        UIApplication.shared.open (url)
+    }
+    
 }
 
