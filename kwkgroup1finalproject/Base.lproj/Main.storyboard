@@ -3,7 +3,6 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -19,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="buddgy logo" translatesAutoresizingMaskIntoConstraints="NO" id="FyJ-0X-7hS">
-                                <rect key="frame" x="72" y="69" width="271" height="230"/>
+                                <rect key="frame" x="72" y="44" width="271" height="230"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2022-08-02 at 2.39.55 PM" translatesAutoresizingMaskIntoConstraints="NO" id="plC-2f-mqS">
@@ -33,17 +32,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4I9-c2-gdN">
-                                <rect key="frame" x="128" y="438" width="215" height="208"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RbN-dx-KZq">
+                                <rect key="frame" x="132" y="416" width="150" height="157"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemGreenColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="">
-                                    <imageReference key="image" image="square.and.arrow.up" catalog="system" symbolScale="large"/>
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                    <backgroundConfiguration key="background" image="buddgy logo"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="fv7-y6-XCe" kind="show" id="EeY-Vx-hzS"/>
+                                    <segue destination="3ZH-ir-lKg" kind="presentation" id="867-eY-HxB"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -54,9 +51,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-155" y="64"/>
+            <point key="canvasLocation" x="-301" y="64"/>
         </scene>
-        <!--View Controller-->
+        <!--Budget-->
         <scene sceneID="CfN-h5-WEj">
             <objects>
                 <viewController id="fv7-y6-XCe" sceneMemberID="viewController">
@@ -73,21 +70,22 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fQ9-ri-gVU"/>
-                        <color key="backgroundColor" name="AccentColor"/>
+                        <color key="backgroundColor" red="0.9941087703" green="0.85419593569999996" blue="0.86265055099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" name="AccentColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Budget" image="person.2" catalog="system" id="GxM-lm-3qs"/>
                     <navigationItem key="navigationItem" id="73Y-UX-wXE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZY8-13-Z0u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="636" y="66"/>
+            <point key="canvasLocation" x="532" y="64"/>
         </scene>
-        <!--View Controller-->
+        <!--Resources-->
         <scene sceneID="UXf-Jy-i0K">
             <objects>
                 <viewController id="rWN-Tq-ofc" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QWp-qA-MHi">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Resources" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIA-3I-kaC">
@@ -101,17 +99,40 @@
                         <viewLayoutGuide key="safeArea" id="t5m-ys-TW1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Resources" image="person.2" catalog="system" id="exn-o0-dPD">
+                        <color key="badgeColor" red="1" green="0.89711536729999997" blue="0.41375691250000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cbH-ZJ-VQf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1274" y="64"/>
         </scene>
-        <!--View Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="JSG-aQ-d7G">
+            <objects>
+                <tabBarController id="3ZH-ir-lKg" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Tft-NW-c5e">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="0.89711536729999997" blue="0.41375691250000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="1" green="0.84731865279999996" blue="0.46713161269999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="fv7-y6-XCe" kind="relationship" relationship="viewControllers" id="2Wq-V7-3gs"/>
+                        <segue destination="rWN-Tq-ofc" kind="relationship" relationship="viewControllers" id="FKZ-nZ-qiR"/>
+                        <segue destination="jf7-i7-dZB" kind="relationship" relationship="viewControllers" id="RmJ-gX-Mn7"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H7b-vm-WDX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="635" y="829"/>
+        </scene>
+        <!--Rewards-->
         <scene sceneID="GvD-gT-AQe">
             <objects>
                 <viewController id="jf7-i7-dZB" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zN2-pd-dSo">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rewards Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pwq-rl-2cY">
@@ -125,6 +146,7 @@
                         <viewLayoutGuide key="safeArea" id="tGb-TF-fwd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Rewards" id="WsM-9J-exb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gHH-Q7-WnF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -134,15 +156,12 @@
     <resources>
         <image name="Screen Shot 2022-08-02 at 2.39.55 PM" width="338" height="614"/>
         <image name="buddgy logo" width="309" height="310"/>
-        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <image name="person.2" catalog="system" width="128" height="81"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
