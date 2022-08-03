@@ -8,7 +8,8 @@
 import UIKit
 
 class TableViewControllerresource: UITableViewController {
-
+    @IBOutlet weak var investingresource: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,7 +19,13 @@ class TableViewControllerresource: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
+    
+    @IBAction func investingresource(_ sender: Any) {
+        let url = URL (string:
+        "https://www.fool.com/investing/how-to-invest/")!
+        UIApplication.shared.open (url)
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
