@@ -73,9 +73,6 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tqk-xG-3Oz">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
                                         <color key="backgroundColor" red="0.22784867880000001" green="0.44574683900000001" blue="0.63139462469999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="1500" id="cUl-sM-Ubq"/>
-                                        </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -229,9 +226,6 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ts-F7-luo">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="2000"/>
                                         <color key="backgroundColor" red="0.65029239650000004" green="0.8688388467" blue="0.48227804899999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="2000" id="IYW-hE-69Z"/>
-                                        </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -379,9 +373,6 @@
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.22784867880000001" green="0.44574683900000001" blue="0.63139462469999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="1500" id="b9a-Mq-Gcc"/>
-                                        </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
