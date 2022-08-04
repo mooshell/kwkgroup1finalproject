@@ -9,6 +9,9 @@ import UIKit
 
 class TableViewControllerresource: UITableViewController {
     @IBOutlet weak var investingresource: UIButton!
+    @IBOutlet weak var credit: UIButton!
+    @IBOutlet weak var savings: UIButton!
+    @IBOutlet weak var loans: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,11 +24,28 @@ class TableViewControllerresource: UITableViewController {
     }
     
     @IBAction func investingresource(_ sender: Any) {
-        let url = URL (string:
+        let urlone = URL (string:
         "https://www.fool.com/investing/how-to-invest/")!
-        UIApplication.shared.open (url)
+        UIApplication.shared.open (urlone)
     }
     
+    @IBAction func credit(_ sender: Any) {
+        let urltwo = URL (string:
+        "https://wallethub.com/credit-cards/starter/")!
+        UIApplication.shared.open (urltwo)
+    }
+    
+    @IBAction func savings(_ sender: Any) {
+        let urlthree = URL (string:
+        "https://thecollegeinvestor.com/22453/save-money-in-college/")!
+        UIApplication.shared.open (urlthree)
+    }
+    
+    @IBAction func loans(_ sender: Any) {
+        let urlfour = URL (string:
+         "https://www.collegecovered.com/paying-for-college/real-college-budget/")!
+        UIApplication.shared.open (urlfour)
+    }
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
