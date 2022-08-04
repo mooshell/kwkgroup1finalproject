@@ -67,118 +67,144 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Budgeting " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Djq-k7-Ztz">
-                                <rect key="frame" x="122" y="12" width="170" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="1" green="0.84731865279999996" blue="0.46713161269999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
-                                <color key="textColor" red="1" green="0.84731865279999996" blue="0.46713161269999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Here is an example budget: 50% for covering expenses (needed), 30% for savings, 20% for personal spending " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNK-Ok-MLL">
-                                <rect key="frame" x="20" y="12" width="374" height="147"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Monthly Income ($)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brc-36-14x">
-                                <rect key="frame" x="12" y="172" width="229" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Xd-YY-OA0">
-                                <rect key="frame" x="261" y="167" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Savings Total ($)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uwp-Ko-tZk">
-                                <rect key="frame" x="24" y="218" width="204" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Aaf-YU-ZLC">
-                                <rect key="frame" x="261" y="213" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please enter the following values to nearest dollar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2z-QV-KtH">
-                                <rect key="frame" x="52" y="128" width="311" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jsT-9q-Y4g">
-                                <rect key="frame" x="170" y="384" width="75" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <backgroundConfiguration key="background" image="201-2012389_green-piggy-bank-png-piggy-bank-png-circle.png"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="budgetbutton:" destination="fv7-y6-XCe" eventType="touchUpInside" id="xGo-gV-EbN"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxG-Wg-QSV">
-                                <rect key="frame" x="10" y="311" width="384" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Click on Wilbur to see this months suggested budget and savings!">
-                                        <attributes>
-                                            <font key="NSFont" size="17" name="Avenir-Book"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Monthly Expenses Total ($)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ClV-kG-MU0">
-                                <rect key="frame" x="15" y="266" width="224" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NVn-Bj-DTH">
-                                <rect key="frame" x="261" y="261" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMU-ex-XpD">
-                                <rect key="frame" x="186" y="491" width="0.0" height="0.0"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="expected budget/savings information" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5Cv-zE-rCD">
-                                <rect key="frame" x="87" y="491" width="240" height="72"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lQ1-ZS-i8A">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tqk-xG-3Oz">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxG-Wg-QSV">
+                                                <rect key="frame" x="15" y="330" width="384" height="56"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Click on Wilbur to see this months suggested budget and savings!">
+                                                        <attributes>
+                                                            <font key="NSFont" size="17" name="Avenir-Book"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Here is an example budget: 50% for covering expenses (needed), 30% for savings, 20% for personal spending " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNK-Ok-MLL">
+                                                <rect key="frame" x="20" y="22" width="374" height="147"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NVn-Bj-DTH">
+                                                <rect key="frame" x="292" y="164" width="97" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Monthly Expenses Total ($)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ClV-kG-MU0">
+                                                <rect key="frame" x="25" y="174" width="224" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please enter the following values to nearest dollar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2z-QV-KtH">
+                                                <rect key="frame" x="52" y="136" width="311" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Savings Total ($)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uwp-Ko-tZk">
+                                                <rect key="frame" x="25" y="218" width="204" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Monthly Income ($)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brc-36-14x">
+                                                <rect key="frame" x="25" y="270" width="229" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Aaf-YU-ZLC">
+                                                <rect key="frame" x="292" y="218" width="97" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Xd-YY-OA0">
+                                                <rect key="frame" x="292" y="270" width="97" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Budgeting " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Djq-k7-Ztz" userLabel="Budgeting">
+                                                <rect key="frame" x="122" y="22" width="170" height="38"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" red="1" green="0.84731865279999996" blue="0.46713161269999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                                <color key="textColor" red="1" green="0.84731865279999996" blue="0.46713161269999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jsT-9q-Y4g">
+                                                <rect key="frame" x="170" y="394" width="75" height="75"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background" image="201-2012389_green-piggy-bank-png-piggy-bank-png-circle.png"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="budgetbutton:" destination="fv7-y6-XCe" eventType="touchUpInside" id="xGo-gV-EbN"/>
+                                                </connections>
+                                            </button>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="expected budget/savings information" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5Cv-zE-rCD">
+                                                <rect key="frame" x="87" y="490" width="240" height="72"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.22784867880000001" green="0.44574683900000001" blue="0.63139462469999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMU-ex-XpD">
+                                        <rect key="frame" x="207" y="421" width="0.0" height="0.0"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="tqk-xG-3Oz" firstAttribute="top" secondItem="lQ1-ZS-i8A" secondAttribute="top" id="EhJ-PT-J0i"/>
+                                    <constraint firstAttribute="bottom" secondItem="tqk-xG-3Oz" secondAttribute="bottom" id="Skq-PU-nMy"/>
+                                    <constraint firstAttribute="trailing" secondItem="tqk-xG-3Oz" secondAttribute="trailing" id="qSI-x1-wut"/>
+                                    <constraint firstItem="tqk-xG-3Oz" firstAttribute="leading" secondItem="lQ1-ZS-i8A" secondAttribute="leading" id="wcG-1p-Cug"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fQ9-ri-gVU"/>
                         <color key="backgroundColor" red="0.22784867880000001" green="0.44574683900000001" blue="0.63139462469999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" name="AccentColor"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="lQ1-ZS-i8A" firstAttribute="leading" secondItem="Wf8-E3-p5p" secondAttribute="leading" id="1yX-dn-caw"/>
+                            <constraint firstItem="tqk-xG-3Oz" firstAttribute="width" secondItem="Wf8-E3-p5p" secondAttribute="width" id="8Dn-ei-6D7"/>
+                            <constraint firstItem="lQ1-ZS-i8A" firstAttribute="trailing" secondItem="fQ9-ri-gVU" secondAttribute="trailing" id="ELi-Ri-vQW"/>
+                            <constraint firstItem="tqk-xG-3Oz" firstAttribute="height" secondItem="Wf8-E3-p5p" secondAttribute="height" multiplier="1.78147" id="IPo-Qj-FY2"/>
+                            <constraint firstAttribute="bottom" secondItem="lQ1-ZS-i8A" secondAttribute="bottom" id="bI0-zS-9jx"/>
+                            <constraint firstItem="lQ1-ZS-i8A" firstAttribute="top" secondItem="fQ9-ri-gVU" secondAttribute="top" id="saN-KI-7Qm"/>
+                        </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="Ss5-7r-2Xr" appends="YES" id="95J-8U-3Au"/>
                         </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Budget" image="plus.slash.minus" catalog="system" id="GxM-lm-3qs"/>
                     <navigationItem key="navigationItem" id="73Y-UX-wXE"/>
+                    <size key="freeformSize" width="414" height="896"/>
                     <connections>
                         <outlet property="budgetbutton" destination="jsT-9q-Y4g" id="hoF-Ba-DsO"/>
                     </connections>
@@ -196,6 +222,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OiR-Vt-1tD">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ts-F7-luo">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2000"/>
+                                        <color key="backgroundColor" red="0.65029239650000004" green="0.8688388467" blue="0.48227804899999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="9Ts-F7-luo" firstAttribute="top" secondItem="OiR-Vt-1tD" secondAttribute="top" id="84x-vs-PDt"/>
+                                    <constraint firstItem="9Ts-F7-luo" firstAttribute="leading" secondItem="OiR-Vt-1tD" secondAttribute="leading" id="EoZ-PM-4gj"/>
+                                    <constraint firstAttribute="trailing" secondItem="9Ts-F7-luo" secondAttribute="trailing" id="YWQ-qI-D8P"/>
+                                    <constraint firstAttribute="bottom" secondItem="9Ts-F7-luo" secondAttribute="bottom" id="lg4-S3-bfL"/>
+                                </constraints>
+                            </scrollView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Resources" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIA-3I-kaC">
                                 <rect key="frame" x="140" y="20" width="135" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -265,10 +306,19 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="t5m-ys-TW1"/>
                         <color key="backgroundColor" red="0.65029239650000004" green="0.8688388467" blue="0.48227804899999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="OiR-Vt-1tD" firstAttribute="trailing" secondItem="t5m-ys-TW1" secondAttribute="trailing" id="CNv-rU-G2b"/>
+                            <constraint firstAttribute="bottom" secondItem="OiR-Vt-1tD" secondAttribute="bottom" id="JIf-JJ-Ow0"/>
+                            <constraint firstItem="OiR-Vt-1tD" firstAttribute="leading" secondItem="t5m-ys-TW1" secondAttribute="leading" id="Opn-Fb-5N9"/>
+                            <constraint firstItem="9Ts-F7-luo" firstAttribute="width" secondItem="QWp-qA-MHi" secondAttribute="width" id="Re9-Rt-IiH"/>
+                            <constraint firstItem="OiR-Vt-1tD" firstAttribute="top" secondItem="t5m-ys-TW1" secondAttribute="top" id="Sut-al-FmW"/>
+                            <constraint firstItem="9Ts-F7-luo" firstAttribute="height" secondItem="QWp-qA-MHi" secondAttribute="height" multiplier="2.3753" id="hTU-R3-vhF"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Resources" image="person.2" catalog="system" id="exn-o0-dPD">
                         <color key="badgeColor" red="0.22784867880000001" green="0.44574683900000001" blue="0.63139462469999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBarItem>
+                    <size key="freeformSize" width="414" height="896"/>
                     <connections>
                         <outlet property="credit" destination="16E-wt-Wgx" id="V3S-By-6QB"/>
                         <outlet property="investingresource" destination="t5u-CQ-nR0" id="SyI-9j-D1d"/>
@@ -278,7 +328,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cbH-ZJ-VQf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1273.913043478261" y="63.616071428571423"/>
+            <point key="canvasLocation" x="1298.5507246376812" y="63.616071428571423"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="JSG-aQ-d7G">
@@ -310,6 +360,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DpY-z3-RH5">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8yX-e3-1A8">
+                                        <rect key="frame" x="0.0" y="0.0" width="424" height="1500"/>
+                                        <color key="backgroundColor" red="0.22784867880000001" green="0.44574683900000001" blue="0.63139462469999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="8yX-e3-1A8" firstAttribute="leading" secondItem="DpY-z3-RH5" secondAttribute="leading" id="1bi-qD-h3R"/>
+                                    <constraint firstAttribute="bottom" secondItem="8yX-e3-1A8" secondAttribute="bottom" id="7Rg-7s-JOY"/>
+                                    <constraint firstItem="8yX-e3-1A8" firstAttribute="top" secondItem="DpY-z3-RH5" secondAttribute="top" id="nqj-Ce-l2e"/>
+                                    <constraint firstAttribute="trailing" secondItem="8yX-e3-1A8" secondAttribute="trailing" id="vxK-eg-Om1"/>
+                                </constraints>
+                            </scrollView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rewards Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pwq-rl-2cY">
                                 <rect key="frame" x="111" y="20" width="193" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -331,22 +396,24 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You currently have" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsZ-FU-8ko">
-                                <rect key="frame" x="111" y="169" width="169" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
-                                <color key="textColor" red="1" green="0.84731865279999996" blue="0.46713161269999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tGb-TF-fwd"/>
                         <color key="backgroundColor" red="0.22784867880000001" green="0.44574683900000001" blue="0.63139462469999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="DpY-z3-RH5" firstAttribute="trailing" secondItem="tGb-TF-fwd" secondAttribute="trailing" id="NKl-mF-qQ0"/>
+                            <constraint firstItem="DpY-z3-RH5" firstAttribute="top" secondItem="tGb-TF-fwd" secondAttribute="top" id="Vzx-XF-JDl"/>
+                            <constraint firstItem="8yX-e3-1A8" firstAttribute="height" secondItem="zN2-pd-dSo" secondAttribute="height" multiplier="1.78147" id="X30-IL-RAi"/>
+                            <constraint firstItem="8yX-e3-1A8" firstAttribute="width" secondItem="zN2-pd-dSo" secondAttribute="width" multiplier="1.02415" id="eKL-Na-lHe"/>
+                            <constraint firstItem="DpY-z3-RH5" firstAttribute="leading" secondItem="tGb-TF-fwd" secondAttribute="leading" id="tr5-FU-sPF"/>
+                            <constraint firstAttribute="bottom" secondItem="DpY-z3-RH5" secondAttribute="bottom" id="wr2-4j-qMw"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Rewards" image="gift" catalog="system" id="WsM-9J-exb"/>
+                    <size key="freeformSize" width="414" height="896"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gHH-Q7-WnF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1915.9420289855075" y="65.625"/>
+            <point key="canvasLocation" x="2044.9275362318842" y="63.616071428571423"/>
         </scene>
     </scenes>
     <resources>
