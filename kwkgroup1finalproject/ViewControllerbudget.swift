@@ -8,8 +8,9 @@
 import UIKit
 
 class ViewControllerbudget: UIViewController {
-
     @IBOutlet weak var budgetbutton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,6 +18,7 @@ class ViewControllerbudget: UIViewController {
     }
     
     @IBAction func budgetbutton(_ sender: UIButton) {
+        
     }
     
     /*
