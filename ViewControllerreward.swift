@@ -8,14 +8,28 @@
 import UIKit
 
 class ViewControllerreward: UIViewController {
+    
+    @IBOutlet weak var wishlistlist: UITextView!
+    @IBOutlet weak var item: UITextView!
+    @IBOutlet weak var cost: UITextView!
+    var wishlist = [String] ()
+   
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+  
+    @IBAction func printlist(_ sender: Any) {
+        var items = String (item.text!)
+        var costs = String (cost.text!)
+        let wishes = (wishlist.append(items + costs))
+        
+        
+    }
     
-
+    
     /*
     // MARK: - Navigation
 
