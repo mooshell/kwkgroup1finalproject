@@ -170,7 +170,11 @@ class TableViewControllerresource: UIViewController {
         "https://www.nerdwallet.com/blog/pay-off-debt/")!
         UIApplication.shared.open(urltwentyfour)
     }
-    
+    @IBAction func debtfive(_ sender: Any) {
+        let urltwentyfive = URL (string:
+        "https://www.goodto.com/money/how-to-pay-off-debt-656900")!
+        UIApplication.shared.open(urltwentyfive)
+    }
     
     
     
