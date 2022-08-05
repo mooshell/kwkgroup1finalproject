@@ -544,7 +544,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Ts-F7-luo">
-                                        <rect key="frame" x="0.0" y="41" width="414" height="2000"/>
+                                        <rect key="frame" x="8" y="-30" width="414" height="2000"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Resources" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIA-3I-kaC">
                                                 <rect key="frame" x="140" y="18" width="135" height="39"/>
@@ -635,7 +635,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6NW-70-xwS">
-                                                <rect key="frame" x="14" y="482" width="256" height="27"/>
+                                                <rect key="frame" x="14" y="459" width="256" height="27"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Study Funding: Scholarships">
@@ -677,7 +677,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16E-wt-Wgx">
-                                                <rect key="frame" x="33" y="249" width="175" height="34"/>
+                                                <rect key="frame" x="33" y="233" width="175" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
@@ -688,15 +688,6 @@
                                                     <action selector="credit:" destination="rWN-Tq-ofc" eventType="touchUpInside" id="fHh-mZ-Mg5"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7zO-qa-0fS">
-                                                <rect key="frame" x="79" y="275" width="82" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="50/30/20">
-                                                    <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
-                                                </buttonConfiguration>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QmJ-kY-Wh3">
                                                 <rect key="frame" x="27" y="337" width="185" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -705,15 +696,21 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="Ready for Independence?">
                                                     <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="urlsix:" destination="rWN-Tq-ofc" eventType="touchUpInside" id="gUf-lc-HDY"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8IK-Dl-vv4">
-                                                <rect key="frame" x="36" y="409" width="169" height="34"/>
+                                                <rect key="frame" x="36" y="397" width="169" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Independent living tips">
                                                     <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="living:" destination="rWN-Tq-ofc" eventType="touchUpInside" id="JTq-87-cIU"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Agy-4z-iNQ">
                                                 <rect key="frame" x="14" y="367" width="213" height="34"/>
@@ -723,60 +720,69 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="Moving away from home prep">
                                                     <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="move:" destination="rWN-Tq-ofc" eventType="touchUpInside" id="vcw-Ma-P93"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OK3-by-hQL">
-                                                <rect key="frame" x="0.0" y="451" width="240" height="34"/>
+                                                <rect key="frame" x="0.0" y="429" width="240" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Independent living finance lessons">
                                                     <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="finance:" destination="rWN-Tq-ofc" eventType="touchUpInside" id="CO5-ll-1pV"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C10-1K-5kq">
-                                                <rect key="frame" x="69" y="510" width="108" height="34"/>
+                                                <rect key="frame" x="66" y="479" width="108" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Scholarship 1">
                                                     <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                 </buttonConfiguration>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ja9-jO-XWQ">
-                                                <rect key="frame" x="69" y="530" width="108" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Scholarship 2">
-                                                    <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
-                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="scholaro:" destination="rWN-Tq-ofc" eventType="touchUpInside" id="gv8-Y3-J4g"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dep-TG-mcc">
-                                                <rect key="frame" x="69" y="552" width="108" height="34"/>
+                                                <rect key="frame" x="66" y="529" width="108" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Scholarship 3">
                                                     <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="scholarthree:" destination="rWN-Tq-ofc" eventType="touchUpInside" id="QzZ-FH-L8d"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D1T-K9-w6R">
-                                                <rect key="frame" x="69" y="572" width="108" height="34"/>
+                                                <rect key="frame" x="65" y="559" width="108" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Scholarship 4">
                                                     <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="scholarfour:" destination="rWN-Tq-ofc" eventType="touchUpInside" id="TON-U6-N1D"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OUD-Hz-aoo">
-                                                <rect key="frame" x="69" y="594" width="108" height="34"/>
+                                                <rect key="frame" x="65" y="591" width="108" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Scholarship 5">
                                                     <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="scholarfive:" destination="rWN-Tq-ofc" eventType="touchUpInside" id="iTY-AD-kLZ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XpA-Ep-LKs">
                                                 <rect key="frame" x="50" y="667" width="140" height="34"/>
@@ -786,6 +792,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="Investing in Stocks">
                                                     <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="stocktwoo:" destination="rWN-Tq-ofc" eventType="touchUpInside" id="gi0-3i-N7R"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibj-N0-qLw">
                                                 <rect key="frame" x="62" y="647" width="123" height="34"/>
@@ -795,6 +804,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="Stock Essentials">
                                                     <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="stockonee:" destination="rWN-Tq-ofc" eventType="touchUpInside" id="mOe-sV-NyI"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGT-k3-mrd">
                                                 <rect key="frame" x="51" y="689" width="138" height="34"/>
@@ -804,6 +816,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="Stock Must Knows">
                                                     <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="stockthree:" destination="rWN-Tq-ofc" eventType="touchUpInside" id="Gis-Ge-zy5"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZk-Dk-qPn">
                                                 <rect key="frame" x="66" y="709" width="108" height="34"/>
@@ -813,6 +828,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="Investing 101">
                                                     <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="stockfourr:" destination="rWN-Tq-ofc" eventType="touchUpInside" id="7mI-FB-g4J"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggz-eD-zHY">
                                                 <rect key="frame" x="23" y="751" width="206" height="34"/>
@@ -822,42 +840,62 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="Complete Guide to Investing">
                                                     <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="stocksixx:" destination="rWN-Tq-ofc" eventType="touchUpInside" id="hon-gb-AiV"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhm-eb-VW8">
                                                 <rect key="frame" x="37" y="820" width="179" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Strategies to Avoid Debt">
                                                     <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="debtone:" destination="rWN-Tq-ofc" eventType="touchUpInside" id="xx9-vy-1Xa"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P1M-9K-kdl">
                                                 <rect key="frame" x="31" y="851" width="186" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Avoiding Long Term Debt">
                                                     <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="debttwo:" destination="rWN-Tq-ofc" eventType="touchUpInside" id="b5f-Jm-r3R"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPT-m2-A7w">
                                                 <rect key="frame" x="22" y="890" width="208" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Breaking the Debt Trap Cycle">
                                                     <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="debtthree:" destination="rWN-Tq-ofc" eventType="touchUpInside" id="Po7-5i-rLu"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WE2-B1-wOk">
                                                 <rect key="frame" x="25" y="929" width="205" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Paying Off Debt Tools &amp; Tips">
                                                     <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="debtfour:" destination="rWN-Tq-ofc" eventType="touchUpInside" id="oEm-4J-seV"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Gc-eD-Kv5">
                                                 <rect key="frame" x="43" y="968" width="177" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Streamlined Debt Payoff">
                                                     <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
@@ -866,10 +904,38 @@
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wB-n4-DUt">
                                                 <rect key="frame" x="53" y="731" width="146" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="7 Rules to Investing">
                                                     <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="stockfivvee:" destination="rWN-Tq-ofc" eventType="touchUpInside" id="x10-h5-MjL"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7zO-qa-0fS">
+                                                <rect key="frame" x="79" y="260" width="82" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="50/30/20">
+                                                    <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="ulrfive:" destination="rWN-Tq-ofc" eventType="touchUpInside" id="s6g-dK-EIn"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ja9-jO-XWQ">
+                                                <rect key="frame" x="65" y="505" width="108" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Scholarship 2">
+                                                    <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="scholartwo:" destination="rWN-Tq-ofc" eventType="touchUpInside" id="7MR-Wz-hxU"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.65029239650000004" green="0.8688388467" blue="0.48227804899999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -900,9 +966,30 @@
                     <size key="freeformSize" width="414" height="896"/>
                     <connections>
                         <outlet property="credit" destination="16E-wt-Wgx" id="V3S-By-6QB"/>
+                        <outlet property="debtfive" destination="7Gc-eD-Kv5" id="RH7-9l-flQ"/>
+                        <outlet property="debtfour" destination="WE2-B1-wOk" id="1EA-WT-4WQ"/>
+                        <outlet property="debtone" destination="nhm-eb-VW8" id="p4W-Ye-SJn"/>
+                        <outlet property="debtthree" destination="BPT-m2-A7w" id="AU8-Ow-KtU"/>
+                        <outlet property="debttwo" destination="P1M-9K-kdl" id="LJ2-r0-zl5"/>
+                        <outlet property="indefour" destination="OK3-by-hQL" id="akZ-qt-CcV"/>
+                        <outlet property="indeone" destination="QmJ-kY-Wh3" id="tet-Nd-heQ"/>
+                        <outlet property="indethree" destination="8IK-Dl-vv4" id="jYW-XV-XhA"/>
+                        <outlet property="indetwo" destination="Agy-4z-iNQ" id="F9t-ax-FjB"/>
                         <outlet property="investingresource" destination="t5u-CQ-nR0" id="SyI-9j-D1d"/>
                         <outlet property="loans" destination="Hnl-Yu-3EJ" id="o4V-sp-FqA"/>
+                        <outlet property="rules" destination="7zO-qa-0fS" id="Nkv-9z-ExJ"/>
                         <outlet property="savings" destination="7CC-Y7-JdH" id="fbA-Oj-dbR"/>
+                        <outlet property="scholarfive" destination="OUD-Hz-aoo" id="DI1-6Q-1vI"/>
+                        <outlet property="scholarfour" destination="D1T-K9-w6R" id="cEv-Ev-pIF"/>
+                        <outlet property="scholarone" destination="C10-1K-5kq" id="L5o-iA-7Jv"/>
+                        <outlet property="scholarthree" destination="dep-TG-mcc" id="Nj5-jG-0Nl"/>
+                        <outlet property="scholartwo" destination="Ja9-jO-XWQ" id="JwT-FB-2XW"/>
+                        <outlet property="stockfive" destination="0wB-n4-DUt" id="a3K-8V-KkT"/>
+                        <outlet property="stockfour" destination="SZk-Dk-qPn" id="vwp-3x-lHD"/>
+                        <outlet property="stockone" destination="ibj-N0-qLw" id="lN0-Ms-1Pz"/>
+                        <outlet property="stocksix" destination="ggz-eD-zHY" id="mbL-4p-ck4"/>
+                        <outlet property="stockthree" destination="SZk-Dk-qPn" id="2oK-Fc-aa3"/>
+                        <outlet property="stocktwo" destination="XpA-Ep-LKs" id="EVI-Qq-TLv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cbH-ZJ-VQf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -936,14 +1023,14 @@
             <objects>
                 <viewController id="jf7-i7-dZB" customClass="ViewControllerreward" customModule="kwkgroup1finalproject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zN2-pd-dSo">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="788"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DpY-z3-RH5">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="788"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8yX-e3-1A8">
-                                        <rect key="frame" x="0.0" y="0.0" width="424" height="1500"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="424" height="1404"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYk-fS-rek">
                                                 <rect key="frame" x="148" y="162" width="101" height="25"/>
@@ -959,7 +1046,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Don't see anything you want? Please add some more items and their current costs! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nje-eo-FoD">
-                                                <rect key="frame" x="21" y="319" width="378" height="78"/>
+                                                <rect key="frame" x="10" y="324" width="378" height="78"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                                 <nil key="textColor"/>
@@ -1026,8 +1113,43 @@
                                                     <action selector="printlist:" destination="jf7-i7-dZB" eventType="touchUpInside" id="UC5-Qk-ehb"/>
                                                 </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Feeling Generous?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sIg-D2-j6I">
+                                                <rect key="frame" x="114" y="483" width="170" height="27"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEW-gh-9De">
+                                                <rect key="frame" x="114" y="751" width="169" height="36"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" red="1" green="0.89711536729999997" blue="0.41375691250000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Click to Learn More!">
+                                                    <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iUZ-oi-fBn">
+                                                <rect key="frame" x="4" y="505" width="388" height="132"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment>
+                                                        <string key="content">Read about Charity Navigator! This is a website that will help you find some non-profit organizations that are currently accepting donations! </string>
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" size="17" name="Avenir-Book"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="donation-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="3zA-pG-Ij5">
+                                                <rect key="frame" x="78" y="615" width="240" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TFE-jc-YHP">
-                                                <rect key="frame" x="70" y="195" width="240" height="128"/>
+                                                <rect key="frame" x="86" y="195" width="240" height="128"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <color key="textColor" systemColor="labelColor"/>
@@ -1058,11 +1180,10 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Rewards" image="gift" catalog="system" id="WsM-9J-exb"/>
-                    <size key="freeformSize" width="414" height="896"/>
+                    <size key="freeformSize" width="414" height="842"/>
                     <connections>
                         <outlet property="cost" destination="YVz-Id-qkN" id="EJG-j6-9pc"/>
                         <outlet property="item" destination="Gmf-da-qZl" id="5hE-YG-UL4"/>
-                        <outlet property="output" destination="TFE-jc-YHP" id="qxd-g9-mYR"/>
                         <outlet property="wishlistlist" destination="TFE-jc-YHP" id="JaW-Ou-gNH"/>
                     </connections>
                 </viewController>
@@ -1075,6 +1196,7 @@
         <image name="201-2012389_green-piggy-bank-png-piggy-bank-png-circle.png" width="791" height="784"/>
         <image name="buddgy logo" width="309" height="310"/>
         <image name="cursorarrow" catalog="system" width="91" height="128"/>
+        <image name="donation-removebg-preview" width="450" height="375"/>
         <image name="gift" catalog="system" width="128" height="124"/>
         <image name="person.2" catalog="system" width="128" height="81"/>
         <image name="plus.slash.minus" catalog="system" width="128" height="115"/>

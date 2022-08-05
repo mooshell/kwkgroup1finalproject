@@ -12,7 +12,7 @@ class ViewControllerreward: UIViewController {
     @IBOutlet weak var wishlistlist: UITextView!
     @IBOutlet weak var item: UITextView!
     @IBOutlet weak var cost: UITextView!
-    var wishlist = [String] ()
+    var wishlist = ""
    
 
     override func viewDidLoad() {
@@ -22,9 +22,11 @@ class ViewControllerreward: UIViewController {
     }
   
     @IBAction func printlist(_ sender: Any) {
-        var items = String (item.text!)
-        var costs = String (cost.text!)
-        let wishes = (wishlist.append(items + costs))
+        let items = String (item.text!)
+        let costs = String (cost.text!)
+        wishlist = items + costs
+        wishlistlist.text = wishlist
+     
         
         
     }
