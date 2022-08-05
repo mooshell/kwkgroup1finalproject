@@ -8,19 +8,33 @@
 import UIKit
 
 class ViewControllerbudget: UIViewController {
-    @IBOutlet weak var budgetbutton: UIButton!
     
+    @IBOutlet weak var incomeField: UITextField!
+    @IBOutlet weak var expensesField: UITextField!
+    @IBOutlet weak var budgetBasis: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func budgetbutton(_ sender: UIButton) {
+    @IBAction func wilburButton(_ sender: Any) {
+        var income = Int (incomeField.text!)!
+        var expense = Int (expensesField.text!)!
+        budgetBasis.text = "\(income - expense)"
         
     }
+
     
+    }
+extension ViewController : UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+}
     /*
     // MARK: - Navigation
 
@@ -31,4 +45,3 @@ class ViewControllerbudget: UIViewController {
     }
     */
 
-}
