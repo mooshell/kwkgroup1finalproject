@@ -351,8 +351,8 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Expenses Tracker" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bcx-P2-bBN">
-                                                <rect key="frame" x="84" y="1155" width="240" height="128"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Expenses Tracker" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SgN-NH-xqc">
+                                                <rect key="frame" x="84" y="1149" width="240" height="128"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <color key="textColor" systemColor="labelColor"/>
