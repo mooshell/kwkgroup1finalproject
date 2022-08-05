@@ -12,6 +12,10 @@ class ViewControllerbudget: UIViewController {
     @IBOutlet weak var incomeField: UITextField!
     @IBOutlet weak var expensesField: UITextField!
     @IBOutlet weak var budgetBasis: UITextView!
+    @IBOutlet weak var currentSavingsField: UITextField!
+    @IBOutlet weak var addSavingsField: UITextField!
+    @IBOutlet weak var savingsTotal: UITextView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,14 +31,15 @@ class ViewControllerbudget: UIViewController {
         
     }
 
+    @IBAction func peppaButton(_ sender: Any) {
+        var currentSavings = Int (currentSavingsField.text!)!
+        var addSavings = Int (addSavingsField.text!)!
+        savingsTotal.text = "\(currentSavings + addSavings)"
+    }
+    
     
     }
-extension ViewController : UITextFieldDelegate {
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
-    }
-}
+
     /*
     // MARK: - Navigation
 
